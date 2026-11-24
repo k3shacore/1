@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кафе «Зерно»</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="#top">☕ Зерно</a>
+  <button id="burger" aria-label="Меню">☰</button>
+  <nav id="nav">
+    <a href="#menu">Меню</a>
+    <a href="#hours">Режим работы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero" id="top">
+  <h1>Кофе, который<br>согревает</h1>
+  <p>Свежая обжарка и домашняя выпечка каждый день</p>
+  <a class="btn" href="#menu">Смотреть меню</a>
+</section>
+
+<section id="menu">
+  <h2>Меню</h2>
+  <div class="filters">
+    <button class="active" data-cat="all">Всё</button>
+    <button data-cat="coffee">Кофе</button>
+    <button data-cat="tea">Чай</button>
+    <button data-cat="cake">Десерты</button>
+  </div>
+  <div class="grid">
+    <article class="card" data-cat="coffee"><span>☕</span><h3>Эспрессо</h3><p>120 ₽</p></article>
+    <article class="card" data-cat="coffee"><span>🥛</span><h3>Капучино</h3><p>190 ₽</p></article>
+    <article class="card" data-cat="coffee"><span>🧊</span><h3>Айс-латте</h3><p>220 ₽</p></article>
+    <article class="card" data-cat="tea"><span>🍵</span><h3>Матча</h3><p>240 ₽</p></article>
+    <article class="card" data-cat="tea"><span>🫖</span><h3>Чай с чабрецом</h3><p>160 ₽</p></article>
+    <article class="card" data-cat="cake"><span>🥐</span><h3>Круассан</h3><p>150 ₽</p></article>
+    <article class="card" data-cat="cake"><span>🍰</span><h3>Чизкейк</h3><p>260 ₽</p></article>
+    <article class="card" data-cat="cake"><span>🍪</span><h3>Печенье с шоколадом</h3><p>90 ₽</p></article>
+  </div>
+</section>
+
+<section id="hours" class="alt">
+  <h2>Режим работы</h2>
+  <ul class="hours">
+    <li><b>Пн–Пт</b><span>08:00 – 21:00</span></li>
+    <li><b>Суббота</b><span>09:00 – 22:00</span></li>
+    <li><b>Воскресенье</b><span>09:00 – 20:00</span></li>
+  </ul>
+</section>
+
+<section id="contacts">
+  <h2>Контакты</h2>
+  <div class="contacts">
+    <p>📍 г. Москва, ул. Лесная, 12</p>
+    <p>📞 +7 (495) 123-45-67</p>
+    <p>✉️ hello@zerno.cafe</p>
+  </div>
+</section>
+
+<footer>© 2026 Кафе «Зерно»</footer>
+<script src="script.js"></script>
+</body>
+</html>
